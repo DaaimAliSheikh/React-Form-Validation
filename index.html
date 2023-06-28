@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="overflow-hidden" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="../src/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <div class="loader fixed h-[100vh] w-[100%] bg-blue-800 flex justify-center items-center">
+      <h1 class=" w-[20%] ">Loading...</h1>
+    </div>
+    <script>function f(){
+      document.querySelector("html").classList.remove("overflow-hidden")
+      document.querySelector('.loader').remove()
+      console.log(45)
+    }</script>
+    <script onload="f()" type="module" src="/src/main.jsx">
+      
+    </script>
+  </body>
+</html>
