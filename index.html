@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../src/index.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class=" h-[100%] " id="root"></div>
     
     <div class="loader fixed h-[100vh] w-[100%] bg-blue-800 flex justify-center items-center">
       <h1 class=" w-[20%] ">Loading...</h1>
@@ -15,7 +15,6 @@
     <script>function f(){
       document.querySelector("html").classList.remove("overflow-hidden")
       document.querySelector('.loader').remove()
-      console.log(45)
     }</script>
     <script onload="f()" type="module" src="/src/main.jsx">
       
